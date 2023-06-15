@@ -43,12 +43,12 @@ export default {
             height: 110px;
             display: block;
             margin: 0 auto;
-            margin-bottom: 2rem;
+            margin-bottom: $sectionsMargin;
         }
 
         nav#top-navbar ul{
             @include flex();
-            margin-bottom: 2rem;
+            margin-bottom: $sectionsMargin;
 
             li{
                 padding: 1rem;
