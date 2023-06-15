@@ -65,11 +65,6 @@ export default {
             margin-bottom: .85rem;
         }
 
-        li a{
-            text-decoration: none;
-            color: $secondaryFontColor;
-        }
-
         div.footer-brand img{
             height: 80%;
             display: block;
