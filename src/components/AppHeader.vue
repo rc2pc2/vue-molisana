@@ -5,32 +5,48 @@
         </div>
         <nav id="top-navbar">
             <ul>
-                <li>
-                    Home
-                </li>
-                <li class="active">
-                    Prodotti
-                </li>
-                <li>
-                    Chi siamo
-                </li>
-                <li>
-                    Contatti
+                <li v-for="link in navbarLinks" :class="link.active ? 'active' : ''">
+                    <a :href="link.link">
+                        {{ link.text }}
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
 </template>
+
 <script>
 export default {
     name: 'AppHeader',
     data(){
         return{
-
+            navbarLinks : [
+                {
+                    link: '#',
+                    text: 'Home',
+                    active: false
+                },
+                {
+                    link: '#',
+                    text: 'Prodotti',
+                    active: true
+                },
+                {
+                    link: '#',
+                    text: 'Chi siamo',
+                    active: false
+                },
+                {
+                    link: '#',
+                    text: 'Contatti',
+                    active: false
+                },
+            ]
         }
     }
 }
 </script>
+
 <style lang="scss" scoped>
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
