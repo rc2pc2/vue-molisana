@@ -10,17 +10,9 @@ export default {
 </script>
 
 <template>
-  <h1>
-    App H1
-  </h1>
   <MainNavbar />
-
 </template>
 
-<style>
-/* importare i file css da condividere con tutto il progetto */
-
-  h1{
-    color: blue;
-  }
+<style lang="scss">
+  @import './styles/general.scss';
 </style>

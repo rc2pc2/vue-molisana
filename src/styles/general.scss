@@ -1,0 +1,12 @@
+// ? questo file sarà il file importato da App.vue che tutti erediteranno
+@use './partials/variables' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: $primaryColor;
+}

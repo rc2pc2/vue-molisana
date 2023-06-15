@@ -32,18 +32,13 @@ export default {
 </script>
 
 <style lang="scss">
-    $primary_color : #fff;
-
-    @mixin flex($direction: row, $justify: center, $align: center , $wrap: wrap){
-        display: flex;
-        flex-direction: $direction;
-        justify-content: $justify;
-        align-items: $align;
-        flex-wrap: $wrap;
-    }
+    @use '../styles/partials/mixins' as *;
 
     div.container{
         @include flex(column, center, start, nowrap);
-        background-color: $primary_color;
+    }
+
+    h1{
+        color: red;
     }
 </style>
