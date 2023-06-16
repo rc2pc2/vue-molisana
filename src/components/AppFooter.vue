@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="footer-brand">
-            <img src="../assets/img/la-molisana-logo.png" alt="Stylized mountains background">
+            <img :src="getImagePath('la-molisana-logo.png')" alt="Stylized mountains background">
         </div>
         <nav class="pastas-footer">
             <h2>
@@ -36,6 +36,11 @@ export default {
     data(){
         return{
 
+        }
+    },
+    methods:{
+        getImagePath: function(img) {
+            return new URL(`../assets/img/${img}`, import.meta.url).href;
         }
     }
 }
