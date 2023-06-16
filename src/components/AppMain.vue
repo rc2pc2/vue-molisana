@@ -1,17 +1,23 @@
 <template>
     <main>
         <h1>
-             - - Content goes in here - - -
+            Lista Prodotti:
         </h1>
+        <PastaProducts class="container"/>
     </main>
 </template>
 <script>
+import PastaProducts from './PastaProducts.vue';
+
 export default {
     name: 'AppMain',
     data(){
         return{
 
         }
+    },
+    components:{
+        PastaProducts
     }
 }
 </script>
@@ -28,5 +34,8 @@ export default {
         font-size: .75rem;
         margin-bottom: $sectionsMargin;
 
+        h1{
+            margin-bottom: $sectionsMargin;
+        }
     }
 </style>
