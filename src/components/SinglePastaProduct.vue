@@ -17,9 +17,6 @@ export default {
     props: {
         pastaElement : Object
     },
-    // props: [
-    //     'pastaElement'
-    // ]
 }
 </script>
 <style lang="scss" scoped>

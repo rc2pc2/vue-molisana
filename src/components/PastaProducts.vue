@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="pasta-products">
         <SinglePastaProduct v-for="pastaObj in pastaList"
                 :pastaElement="pastaObj"
